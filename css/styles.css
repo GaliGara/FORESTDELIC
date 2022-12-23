@@ -1,0 +1,207 @@
+:root{
+    --frist: #A4BE7B;
+    --second: #3D8361;
+    --third: #285430;
+    --white: #fff;
+    --grey: #808080;
+    --black: #000;  
+    --font-f: 'Playfair Display';
+    --font-s:'Poppins';
+}
+/* GLOBALES */
+
+body{
+    text-align: left;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 1280px) {
+    body{
+        text-align:center;
+    }
+}
+
+
+h1,h2,h3{
+    font-family: var(--font-f);
+    font-weight: 700;
+    letter-spacing: .2rem;
+    margin-bottom: 1rem;
+}
+
+label{
+    font-weight: 400;
+}
+
+.container-fluid{
+    padding: 3% 13% 9%;
+}
+
+.big-heading{
+    font-weight: 900;
+    font-size: 3.9rem;
+    line-height: 1.5;
+    letter-spacing: .9rem;
+}
+
+@media (max-width: 768px) {
+    .big-heading{
+        font-size:1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    p{
+        font-size: .9rem;
+    }
+}
+
+/****************** NAV ***********************/
+#title nav .container-fluid{
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.navbar{
+    padding-bottom: 3%;
+}
+
+.navbar-brand{
+    font-family: var(--font-s);
+    font-size: 2rem;
+    font-weight: 900;
+    margin-right: 51%;
+}
+
+@media (max-width: 768px) {
+    #title .navbar-brand{
+        margin-right: auto;
+        font-size: 1.5rem;
+    }
+}
+
+.nav-link{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+}
+
+/****************** TITLE *********************/
+
+#title{
+    background-image: url(../img/forest.jpg);
+    color: var(--white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10rem;
+}
+
+@media (max-width: 768px) {
+    .fix-mq{
+        padding-top: 3rem;
+    }
+}
+.container-img{
+    position: relative;
+    z-index: 1;
+}
+
+.gif-amanita{
+width:27%;
+position: absolute;
+left: 6%;
+top: -30%;
+z-index: -1;
+}
+
+@media (max-width: 1280px) {
+    .gif-amanita{
+        top: -6%;
+        width: 45%;
+    }
+}
+
+.gif-fungus{
+    width: 18%;
+    position: absolute;
+    right: 9%;
+    top: -27%;
+    z-index: -1;
+}
+
+@media (max-width: 1280px) {
+    .gif-fungus{
+        top: -6%;
+        width: 33%;
+    }
+}
+
+/*********************** SERVICES **********************/
+
+#services{
+    background-image: url(//media.giphy.com/media/EkAr1u2YCKmjTzT3we/giphy.gif);
+    color: var(--white);
+}
+
+.box-shadow{
+    box-shadow: -27px 33px 24px 8px rgba(0,0,0,0.65);
+    background-color: var(--second);
+    padding: 3%;
+    margin-top: 3rem;
+    line-height: 1.5;
+    border-radius: 4rem;
+}
+
+.img-services{
+    border-radius: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.services-title{
+    font-size: 1.8rem;
+}
+
+.box{
+    padding: 3%;
+}
+
+/************************* CTA *********************/
+
+#cta{
+    background-image: url(../img/bg-forest.jpg);
+    color: var(--white);
+    padding-top: 6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-text{
+    color: var(--white);
+    font-style: italic;
+}
+
+form{
+margin-bottom: 4rem;
+}
+
+.wakey-gif{
+    width: 33%;
+}
+
+.btn{
+    margin-left: 2rem;
+}
+
+/************************** FOOTER ***********************/
+
+#footer{
+    background-color: var(--frist);
+    padding: 7% 15%;
+    color: var(--white);
+    text-align: center;
+}
+
+.footer-icons{
+    margin: 0rem .3rem;
+}
